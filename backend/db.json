@@ -1,0 +1,29 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "caneta bic preta",
+      "price": 5.2
+    },
+    {
+      "id": 2,
+      "name": "caneta bic azul",
+      "price": 5.2
+    },
+    {
+      "id": 3,
+      "name": "caneta bic vermelha",
+      "price": 5.2
+    },
+    {
+      "id": 4,
+      "name": "caneta bic amarela",
+      "price": 5.2
+    },
+    {
+      "id": 5,
+      "name": "caderno capa dura",
+      "price": 12
+    }
+  ]
+}
