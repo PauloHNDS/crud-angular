@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../product.service';
+import { Iproduct } from '../iproduct';
 
 @Component({
   selector: 'crud-product',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  products : Iproduct[];
+  displayedColumns : string[];
+  constructor(
+    private service : ProductService
+  ) { 
+    this.products = new Array<Iproduct>();
+    this.displayedColumns = ['id', 'name','price', '#']
   }
 
+  ngOnInit(): void {
+    this.service.Get<Iproduct[]>().subscribe( (products) => {
+      this.products = products;
+      console.log(this.products)
+    })
+  }
 }
