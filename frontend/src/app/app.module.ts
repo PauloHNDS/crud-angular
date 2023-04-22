@@ -11,12 +11,18 @@ import { FooterComponent } from './template/footer/footer.component';
 import { HomeComponent } from './view/home/home.component';
 //#endregion
 
+//#region directives
+import { RedDirective } from './directives/red.directive';
+//#endregion directives
+
 //#region Material 
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatListModule } from "@angular/material/list";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatCardModule } from "@angular/material/card";
-import { ProductCrudComponent } from './view/product-crud/product-crud.component';
+import { ForDirective } from './directives/for.directive';
+import { ProductCreateComponent } from './view/product/product-create/product-create.component';
+import { ProductComponent } from './view/product/product/product.component';
 //#endregion
 
 @NgModule({
@@ -26,7 +32,10 @@ import { ProductCrudComponent } from './view/product-crud/product-crud.component
     FooterComponent,
     NavComponent,
     HomeComponent,
-    ProductCrudComponent,
+    RedDirective,
+    ForDirective,
+    ProductCreateComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,

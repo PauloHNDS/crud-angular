@@ -4,4 +4,7 @@
     <mat-card-content>
         Text content
     </mat-card-content>
+    <ul>
+        <li *crudFor="let n em [1 , 2 , 3] usando 'teste'">{{n}} </li>
+    </ul>
 </mat-card>
