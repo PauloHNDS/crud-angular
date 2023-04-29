@@ -28,5 +28,15 @@ export class ProductService {
   Get<T>() : Observable<T> {
     return this.http.get<T>(`${this.path}product`);
   }
+  
+  GetById<T>(id : string) : Observable<T> {
+    return this.http.get<T>(`${this.path}product/${id}`);
+  }
 
-}
+  put<T>(value : T, id : string) : Observable<T> {
+    return this.http.put<T>(`${this.path}product/${id}`, value);
+  }
+  delete(id : string) : Observable<void> {
+    return this.http.delete<void>(`${this.path}product/${id}`);
+  }
+} 

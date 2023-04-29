@@ -10,8 +10,6 @@ import { Router } from '@angular/router';
 })
 export class ProductCreateComponent implements OnInit {
 
-  propLegal : string = "dale dele dele dale";
-
   product: Iproduct = {
     name : "",
     price: 0.00
@@ -24,9 +22,6 @@ export class ProductCreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  fazeralgo() : void {
-    console.log(this.propLegal);  
-  }
   create(): void {
     this.service.create<Iproduct>(this.product).subscribe(
       (result : Iproduct) => {

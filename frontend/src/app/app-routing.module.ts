@@ -4,6 +4,7 @@ import { HomeComponent } from './view/home/home.component';
 import { ProductComponent } from './view/product/product/product.component';
 import { ProductCreateComponent } from './view/product/product-create/product-create.component';
 import { ProductReadComponent } from './view/product/product-read/product-read.component';
+import { ProductUpdateComponent } from './view/product/product-update/product-update.component';
 
 const routes: Routes = [
   {
@@ -15,8 +16,8 @@ const routes: Routes = [
     component: ProductComponent
   },
   {
-    path: 'product/detail/:id',
-    component:ProductCreateComponent
+    path: 'product/update/:id',
+    component:ProductUpdateComponent
   },
   {
     path: 'product/delete/:id',

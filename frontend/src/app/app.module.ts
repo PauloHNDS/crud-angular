@@ -37,6 +37,7 @@ import { ProductReadComponent } from './view/product/product-read/product-read.c
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { ProductUpdateComponent } from './view/product/product-update/product-update.component';
 //#endregion
 
 @NgModule({
@@ -51,6 +52,7 @@ import { MatSortModule } from '@angular/material/sort';
     ProductCreateComponent,
     ProductComponent,
     ProductReadComponent,
+    ProductUpdateComponent,
   ],
   imports: [
     BrowserModule,
